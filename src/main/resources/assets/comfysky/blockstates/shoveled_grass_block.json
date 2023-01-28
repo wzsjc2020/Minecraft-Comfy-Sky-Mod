@@ -1,0 +1,107 @@
+{
+  "variants": {
+    "moisture=0": [
+      {
+        "model": "comfysky:block/shoveled_grass_block"
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block",
+        "y": 90
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block",
+        "y": 180
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block",
+        "y": 270
+      }
+    ],
+    "moisture=1": [
+      {
+        "model": "comfysky:block/shoveled_grass_block"
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block",
+        "y": 90
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block",
+        "y": 180
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block",
+        "y": 270
+      }
+    ],
+    "moisture=2": [
+      {
+        "model": "comfysky:block/shoveled_grass_block"
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block",
+        "y": 90
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block",
+        "y": 180
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block",
+        "y": 270
+      }
+    ],
+    "moisture=3": [
+      {
+        "model": "comfysky:block/shoveled_grass_block"
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block",
+        "y": 90
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block",
+        "y": 180
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block",
+        "y": 270
+      }
+    ],
+    "moisture=4": [
+      {
+        "model": "comfysky:block/shoveled_grass_block"
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block",
+        "y": 90
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block",
+        "y": 180
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block",
+        "y": 270
+      }
+    ],
+    "moisture=5": [
+      {
+        "model": "comfysky:block/shoveled_grass_block_moist"
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block_moist",
+        "y": 90
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block_moist",
+        "y": 180
+      },
+      {
+        "model": "comfysky:block/shoveled_grass_block_moist",
+        "y": 270
+      }
+    ]
+  }
+}
+
