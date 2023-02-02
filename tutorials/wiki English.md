@@ -200,4 +200,4 @@ simple explain how to use this item:
 
 Once you install this mod, it will replace original Ilmango skyblock. You new sky block should look like this.
 
-![](screenshot/comfysky skyblocks.png)
+![](screenshot/comfysky_skyblocks.png)
