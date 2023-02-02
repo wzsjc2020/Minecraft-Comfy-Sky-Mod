@@ -100,7 +100,7 @@ basic data: @nbt lastInteractTime   #broke instantly
 
 feature: 
 
-1. Sky light must higher than 0 when you collect dews form a dew flower. Ambient environment light is not unaffected. 
+1. Sky light must higher than 0 when you collect dews form a dew flower. Ambient environment light is unaffected. 
 2. You could collect 2 dews before Dawn(time of day : 3000); You could collect 1 dew before Noon(time of day : 6000); You can't  collect any dew later than noon. (I called it evaporation.)(For v17.0.3 and earlier version, the cooldown time between collecting dews must greater than 24000 time of day) 
 3. You can get an extra drop of dew on raining days.
 
