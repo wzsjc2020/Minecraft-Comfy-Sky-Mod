@@ -1,8 +1,10 @@
 package com.wzssoft.comfysky.utils;
 
+import com.wzssoft.comfysky.block.ComfySkyBlocks;
 import com.wzssoft.treasurehuntlib.block.TreasureHuntLibBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.util.math.MathHelper;
 
 import java.util.ArrayList;
 
@@ -15,7 +17,7 @@ public class ComfySkyConstant {
 
     public static void initConstant() {
 
-        VANILLA_PLANT_LIST= new ArrayList<>(){{
+        VANILLA_PLANT_LIST = new ArrayList<>() {{
             add(Blocks.CARROTS);
             add(Blocks.POTATOES);
             add(Blocks.BEETROOTS);
@@ -40,13 +42,15 @@ public class ComfySkyConstant {
 
 
         GRASS_BLOCK_PLANT_SURVIVE_LIST = new ArrayList<>() {{
-            add(TreasureHuntLibBlocks.FLOWER_SEEDLING_BLOCK);
-            addAll(VANILLA_PLANT_LIST);
+            add(ComfySkyBlocks.DEW_FLOWER_BLOCK);
             addAll(VANILLA_FLOWER_LIST);
         }};
 
         GRASS_BLOCK_SEEDLING_SURVIVE_LIST = new ArrayList<>() {{
             add(TreasureHuntLibBlocks.FLOWER_SEEDLING_BLOCK);
+            addAll(VANILLA_PLANT_LIST);
         }};
     }
+
+    public static int ITEM_BAR_COLOR = MathHelper.packRgb(51, 204, 204);
 }

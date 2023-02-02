@@ -1,8 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "comfysky",
-  "version": "17.0.1",
-
+  "version": "17.0.3",
   "name": "Comfy Sky",
   "description": "make ilmango sky block much more easier",
   "authors": [
@@ -11,10 +10,8 @@
   "contact": {
     "homepage": "https://github.com/wzsjc2020/Treasure-Hunt-Lib"
   },
-
   "license": "CC BY-NC-SA 4.0",
   "icon": "assets/comfysky/icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -27,12 +24,12 @@
   "mixins": [
     "comfysky.mixins.json"
   ],
-
   "depends": {
     "fabricloader": ">=0.14.9",
     "fabric-api": "*",
     "minecraft": "~1.19",
-    "java": ">=17"
+    "java": ">=17",
+    "treasurehuntlib": ">=17.1.2"
   },
   "suggests": {
     "another-mod": "*"

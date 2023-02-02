@@ -8,6 +8,8 @@ import com.wzssoft.comfysky.item.ComfySkyItems;
 import com.wzssoft.comfysky.utils.ComfySkyConstant;
 import com.wzssoft.comfysky.utils.ComfySkyLootTableModifier;
 import com.wzssoft.treasurehuntlib.TreasureHuntLibRegister;
+import com.wzssoft.treasurehuntlib.block.TreasureHuntLibBlocks;
+import com.wzssoft.treasurehuntlib.utils.TreasureHuntLibConstant;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.block.Blocks;
 import org.slf4j.Logger;
@@ -30,5 +32,6 @@ public class ComfySkyMod implements ModInitializer {
         ComfySkyConstant.initConstant();
 
         TreasureHuntLibRegister.registerTreasureEnchantmentEffectBlock(Blocks.GRASS_BLOCK, ComfySkyBlocks.SHOVELED_GRASS_BLOCK);
+
     }
 }
