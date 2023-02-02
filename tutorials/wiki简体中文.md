@@ -214,4 +214,4 @@ simple explain how to use this item:
 
 加载此模组会自动替换李芒果原版空岛的数据，你的空岛应该看上去像这样。
 
-![](screenshot/comfysky skyblocks.png)
+![](screenshot/comfysky_skyblocks.png)
