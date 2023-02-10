@@ -1,0 +1,37 @@
+@tool:
+@auhtor:
+@time:
+@link:
+@description:
+
+@tool:BlockBanch
+@auhtor:unknown
+@time:2022
+@link:https://www.blockbench.net/
+@description:制作方块模型
+
+@tool: Auto Line Breaker
+@auhtor:wzssoft wzsjc2023
+@time:2023
+@link: 不开源
+@description: 当特定字符出现时，在其前面添加一个换行符号
+
+@tool:Auto Name Replacer
+@auhtor:wzssoft wzsjc2023
+@time:2023.1.8
+@link: 不开源
+@description:批量替换合成物品的物品id，需要配合Recipe Generator 使用
+
+@tool:Crafting Recipe Generator
+@auhtor:TheDestruc7i0n
+@time:2022
+@link:https://crafting.thedestruc7i0n.ca/
+@description:自动生成原版物品的合成配方，模组物品需要配合 wzssoft Auto Name Replacer
+
+@tool:Advancement Generator
+@auhtor:misode
+@time:2023.2.3
+@link:https://misode.github.io/advancement/
+@description:自动生成进度
+
+

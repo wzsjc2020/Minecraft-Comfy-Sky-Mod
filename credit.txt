@@ -1,0 +1,47 @@
+@mod_item: 
+@author:
+@date:
+@link:
+@description:
+
+@mod_item:  crushed items
+@author: forager game creators
+@date:2023.1.29
+@link:https://morusleaf.github.io/forager-handbook/item.html
+@description: 使用了浮岛物语物品中铁矿，煤矿，石头的美术资源
+
+@mod_item: dew_flower
+@author:unkonwn
+@date:2023.1.29
+@link:https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty/files
+@description:使用了biomes-o-plenty 中glowflower的方块模型与贴图
+
+@mod_item: dew_bottle
+@author:drsquidnugget
+@date:2023.1.29
+@link:https://www.planetminecraft.com/mod/shield-potions-small-medium-large/
+@description:使用了potion 的贴图
+
+@mod_item: packing_tape
+@author: storage drawer mod creators
+@date:2023.2.1
+@link:https://www.curseforge.com/minecraft/mc-mods/storage-drawers/files
+@description: 使用了 item/tape_roll 的贴图
+
+@mod_item: packed_barrel
+@author: storage drawer mod creators
+@date:2023.2.1
+@link:https://www.curseforge.com/minecraft/mc-mods/storage-drawers/files
+@description: 使用了 block/tape 的贴图
+
+@mod_item: crushed_sand
+@author:unkonwn
+@date:2023.2.4
+@link:https://github.com/qinglangg/ElementTimes
+@description: 使用了sandpower的贴图
+
+@mod_item:  crushed items
+@author: forager game creators
+@date:2023.2.4
+@link:https://morusleaf.github.io/forager-handbook/item.html
+@description: 使用了浮岛物语物品中金矿的美术资源
