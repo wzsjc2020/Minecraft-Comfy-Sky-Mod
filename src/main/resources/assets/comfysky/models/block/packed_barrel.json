@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "comfysky:block/packed_barrel_bottom",
+    "side": "comfysky:block/packed_barrel_side",
+    "top": "comfysky:block/packed_barrel_top"
+  }
+}

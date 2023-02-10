@@ -1,6 +1,5 @@
 package com.wzssoft.comfysky.block.common;
 
-import com.wzssoft.comfysky.utils.ComfySkyConstant;
 import com.wzssoft.treasurehuntlib.block.common.AbstractShoveledBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -12,10 +11,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
-import java.util.ArrayList;
 
 /**
  * added since 17.0.1
+ * modified at 17.0.6
+ *
  * @specialNote com.wzssoft.modid.block.common.ShoveledGrassBlock.java
  */
 public class ShoveledGrassBlock extends AbstractShoveledBlock {
@@ -38,13 +38,11 @@ public class ShoveledGrassBlock extends AbstractShoveledBlock {
         int i = state.get(MOISTURE);
         if (this.isWaterNearBy(world, pos) || world.hasRain(pos.up())) {
             if (i < MAX_MOISTURE) {
-                world.setBlockState(pos, (BlockState) state.with(MOISTURE, MAX_MOISTURE), Block.NOTIFY_LISTENERS);
+                world.setBlockState(pos, state.with(MOISTURE, MAX_MOISTURE), Block.NOTIFY_LISTENERS);
             }
         } else if (i > 0) {
-            world.setBlockState(pos, (BlockState) state.with(MOISTURE, i - 1), Block.NOTIFY_LISTENERS);
-        } else if (this.hasAirOnTop(world, pos)) {
-
-            //如果是没有花，且湿度为0则转换成默认方块
+            world.setBlockState(pos, state.with(MOISTURE, i - 1), Block.NOTIFY_LISTENERS);
+        } else {
             this.setToOriginalBlock(world, pos);
         }
     }
@@ -55,26 +53,6 @@ public class ShoveledGrassBlock extends AbstractShoveledBlock {
             return true;
         }
         return false;
-    }
-
-    @Override
-    public boolean canPlantPlant(World world, BlockState floorState, BlockPos floorPos) {
-        return true;
-    }
-
-    @Override
-    public int getMoisture(BlockState floorState) {
-        return floorState.get(MOISTURE);
-    }
-
-    @Override
-    public ArrayList<Block> getPlantSurviveList() {
-        return ComfySkyConstant.GRASS_BLOCK_PLANT_SURVIVE_LIST;
-    }
-
-    @Override
-    public ArrayList<Block> getSeedlingSurviveList() {
-        return ComfySkyConstant.GRASS_BLOCK_SEEDLING_SURVIVE_LIST;
     }
 
     @Override

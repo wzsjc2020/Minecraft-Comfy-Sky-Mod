@@ -4,7 +4,8 @@
   "package": "com.wzssoft.comfysky.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "GlassBottleItemMixin"
+    "GlassBottleItemMixin",
+    "BarrelBlockMixin"
   ],
   "client": [
   ],

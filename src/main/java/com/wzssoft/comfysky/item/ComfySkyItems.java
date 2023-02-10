@@ -2,6 +2,7 @@ package com.wzssoft.comfysky.item;
 
 import com.wzssoft.comfysky.ComfySkyMod;
 import com.wzssoft.comfysky.item.common.DewBottleItem;
+import com.wzssoft.comfysky.item.common.PackingTapeItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -14,6 +15,7 @@ public class ComfySkyItems {
     public static final Item CRUSHED_IRON_ORE = registerItem("crushed_iron_ore", new Item(new FabricItemSettings().group(ComfySkyItemGroups.ExtraCraft).rarity(Rarity.COMMON)));
     public static final Item CRUSHED_STONE = registerItem("crushed_stone", new Item(new FabricItemSettings().group(ComfySkyItemGroups.ExtraCraft).rarity(Rarity.COMMON)));
     public static final Item DEW_BOTTLE = registerItem("dew_bottle", new DewBottleItem(new FabricItemSettings().group(ComfySkyItemGroups.ExtraCraft).rarity(Rarity.COMMON).maxDamage(50)));
+    public static final Item PACKING_TAPE = registerItem("packing_tape", new PackingTapeItem(new FabricItemSettings().group(ComfySkyItemGroups.ExtraCraft).rarity(Rarity.COMMON).maxDamage(5)));
 
 
     private static Item registerItem(String name, Item item) {

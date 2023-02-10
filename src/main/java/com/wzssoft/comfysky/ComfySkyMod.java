@@ -2,10 +2,12 @@ package com.wzssoft.comfysky;
 
 import com.wzssoft.comfysky.block.ComfySkyBlockEntityType;
 import com.wzssoft.comfysky.block.ComfySkyBlocks;
+import com.wzssoft.comfysky.block.common.ShoveledGrassBlock;
 import com.wzssoft.comfysky.item.ComfySkyBlockItems;
 import com.wzssoft.comfysky.item.ComfySkyItemTags;
 import com.wzssoft.comfysky.item.ComfySkyItems;
 import com.wzssoft.comfysky.utils.ComfySkyConstant;
+import com.wzssoft.comfysky.utils.ComfySkyContentsLootFunction;
 import com.wzssoft.comfysky.utils.ComfySkyLootTableModifier;
 import com.wzssoft.treasurehuntlib.TreasureHuntLibRegister;
 import com.wzssoft.treasurehuntlib.block.TreasureHuntLibBlocks;
@@ -29,9 +31,11 @@ public class ComfySkyMod implements ModInitializer {
         ComfySkyBlockItems.registerModBlockItems();
         ComfySkyItemTags.registerModItemTags();
         ComfySkyLootTableModifier.registerModModifyLootTable();
+        ComfySkyContentsLootFunction.registerModContentsLootFunction();
         ComfySkyConstant.initConstant();
 
         TreasureHuntLibRegister.registerTreasureEnchantmentEffectBlock(Blocks.GRASS_BLOCK, ComfySkyBlocks.SHOVELED_GRASS_BLOCK);
-
+        TreasureHuntLibRegister.registerFarmlandProperty(ComfySkyBlocks.SHOVELED_GRASS_BLOCK, ShoveledGrassBlock.MOISTURE);
+        TreasureHuntLibConstant.FLOWERS.add(ComfySkyBlocks.DEW_FLOWER_BLOCK);
     }
 }

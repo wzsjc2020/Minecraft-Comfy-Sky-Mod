@@ -15,6 +15,8 @@ public class ComfySkyConstant {
     public static ArrayList<Block> GRASS_BLOCK_PLANT_SURVIVE_LIST;
     public static ArrayList<Block> GRASS_BLOCK_SEEDLING_SURVIVE_LIST;
 
+    public static int MAX_BARREL_DISPLAY_INV;
+
     public static void initConstant() {
 
         VANILLA_PLANT_LIST = new ArrayList<>() {{
@@ -52,5 +54,14 @@ public class ComfySkyConstant {
         }};
     }
 
+
     public static int ITEM_BAR_COLOR = MathHelper.packRgb(51, 204, 204);
+
+
+    public static int getMaxBarrelDisplayInv() {
+        if (MAX_BARREL_DISPLAY_INV == 0) {
+            MAX_BARREL_DISPLAY_INV = 4;
+        }
+        return MAX_BARREL_DISPLAY_INV;
+    }
 }

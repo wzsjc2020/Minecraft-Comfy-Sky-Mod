@@ -1,5 +1,6 @@
 {
   "block.comfysky.shoveled_grass_block": "Shoveled Grass Block",
+  "block.comfysky.packed_barrel": "Packed Barrel",
 
   "itemGroup.comfysky.tab": "Comfy Sky Tab",
 
@@ -7,5 +8,8 @@
   "item.comfysky.crushed_iron_ore": "Crushed Iron Ore",
   "item.comfysky.crushed_stone": "Crushed Stone",
   "item.comfysky.dew_flower": "Dew Flower",
-  "item.comfysky.dew_bottle": "Dew Bottle"
+  "item.comfysky.dew_bottle": "Dew Bottle",
+  "item.comfysky.packing_tape": "Packing Tape",
+
+  "container.minecraft.barrel.more": "and %s more..."
 }

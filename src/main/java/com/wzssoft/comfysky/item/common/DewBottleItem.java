@@ -35,7 +35,7 @@ public class DewBottleItem extends Item {
         ItemStack itemStack = context.getStack();
 
         if (playerEntity == null || world.isClient) {
-            return ActionResult.FAIL;
+            return ActionResult.PASS;
         }
 
         if (state.getBlock() instanceof DewFlowerBlock block) {

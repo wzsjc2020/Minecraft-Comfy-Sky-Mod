@@ -3,9 +3,9 @@ package com.wzssoft.comfysky.block;
 import com.wzssoft.comfysky.ComfySkyMod;
 import com.wzssoft.comfysky.block.hasNBT.DewFlowerBlock;
 import com.wzssoft.comfysky.block.common.ShoveledGrassBlock;
+import com.wzssoft.comfysky.block.hasNBT.PackedBarrelBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -16,6 +16,9 @@ public class ComfySkyBlocks {
             new ShoveledGrassBlock(FabricBlockSettings.of(Material.SOLID_ORGANIC).strength(0.6f).sounds(BlockSoundGroup.GRASS)));
 
     public static final Block DEW_FLOWER_BLOCK = registerBlock("dew_flower",new DewFlowerBlock());
+
+    public static final Block PACKED_BARREL_BLOCK = registerBlock("packed_barrel",
+            new PackedBarrelBlock(FabricBlockSettings.of(Material.WOOD).strength(2.5f).sounds(BlockSoundGroup.WOOD)));
 
 
     private static Block registerBlock(String name, Block block) {

@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "comfysky:block/packed_barrel",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "comfysky:block/packed_barrel",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "comfysky:block/packed_barrel",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "comfysky:block/packed_barrel",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "comfysky:block/packed_barrel"
+    },
+    "facing=west": {
+      "model": "comfysky:block/packed_barrel",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

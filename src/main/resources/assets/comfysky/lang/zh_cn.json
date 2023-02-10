@@ -1,5 +1,6 @@
 {
   "block.comfysky.shoveled_grass_block": "挖掘过的草方块",
+  "block.comfysky.packed_barrel": "打包过的木桶",
 
   "itemGroup.comfysky.tab": "舒适空岛",
 
@@ -7,5 +8,8 @@
   "item.comfysky.crushed_iron_ore": "碎铁矿",
   "item.comfysky.crushed_stone": "碎石",
   "item.comfysky.dew_flower": "露水花",
-  "item.comfysky.dew_bottle": "露水瓶"
+  "item.comfysky.dew_bottle": "露水瓶",
+  "item.comfysky.packing_tape": "打包带",
+
+  "container.minecraft.barrel.more": "还有 %s 个未显示物品..."
 }

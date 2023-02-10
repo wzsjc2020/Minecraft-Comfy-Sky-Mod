@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "comfysky",
-  "version": "17.0.3",
+  "version": "17.0.6",
   "name": "Comfy Sky",
   "description": "make ilmango sky block much more easier",
   "authors": [
@@ -29,7 +29,7 @@
     "fabric-api": "*",
     "minecraft": "~1.19",
     "java": ">=17",
-    "treasurehuntlib": ">=17.1.2"
+    "treasurehuntlib": ">=17.1.3"
   },
   "suggests": {
     "another-mod": "*"
