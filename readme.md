@@ -6,7 +6,7 @@
 
 ### 何为舒适
 
-雷雨天气刷新需要10小时；流浪商人刷新平均需要384分钟；僵尸平均掉落铁锭几率为2.5%；炼药锅有5%的概率会在雨天积水；群系之间平均距离大约为2000格。。。。
+雷雨天气刷新需要10小时；流浪商人刷新平均需要286.5分钟；僵尸平均掉落铁锭几率为2.5%；炼药锅有5%的概率会在雨天积水；群系之间平均距离大约为2000格。。。。
 
 舒适空岛对这些既肝又难又繁琐的东西做了优化，我们添加的物品都是进度的，让肉眼可以看见你每一刻的进步。获取这些物品也会让你更有成就感，因为你与这些物品的交互的每一步，都见证着你的科技发展。
 
@@ -56,15 +56,15 @@
 
 如果你不慎遗失了这把木铲，你可以通过以下指令重新获得一把
 
-/give @p minecraft:wooden_shovel
+/give @p minecraft:wooden_shovel{Unbreakable:1}
 
-/enchant @p treasurehunt:treasure 1
+/enchant @p treasurehunt:treasure
 
 
 
 ### 模组前置
 
-| 需要安装前置库 Treasure Hunt Lib 1.19-17.1.4（v17.0.6及之后版本） | [CourseForge](https://link.mcmod.cn/target/aHR0cHM6Ly93d3cuY3Vyc2Vmb3JnZS5jb20vbWluZWNyYWZ0L21jLW1vZHMvdHJlYXN1cmUtaHVudC1saWI=) |
+| 需要安装前置库 Treasure Hunt Lib 1.19.2-17.1.4（v17.0.6及之后版本） | [CourseForge](https://link.mcmod.cn/target/aHR0cHM6Ly93d3cuY3Vyc2Vmb3JnZS5jb20vbWluZWNyYWZ0L21jLW1vZHMvdHJlYXN1cmUtaHVudC1saWI=) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 需安装 Fabric API                                            | [CourseForge](https://link.mcmod.cn/target/aHR0cHM6Ly93d3cuY3Vyc2Vmb3JnZS5jb20vbWluZWNyYWZ0L21jLW1vZHMvZmFicmljLWFwaQ==) |
 | 需要安装李芒果空岛 Carpet Sky Additions 1.19.2-4.1.3         | [CourseForge](https://link.mcmod.cn/target/aHR0cHM6Ly93d3cuY3Vyc2Vmb3JnZS5jb20vbWluZWNyYWZ0L21jLW1vZHMvY2FycGV0LXNreS1hZGRpdGlvbnM=) |
