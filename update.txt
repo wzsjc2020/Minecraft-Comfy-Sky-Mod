@@ -63,8 +63,11 @@ v17.0.2
 8.同步了英语wiki
 
 
-
-
+2023年2月21日 v17.0.10
+1.修复了packed_barrel可以用漏斗放入禁止打包的物品的BUG
+2.新增了成就系统
+3.修改了block.comfysky.potted_dew_flower中文译名为露水花盆栽
+4.新增了debug_copper_stick,铜调试棒,用于开发者测试
 
 
 
