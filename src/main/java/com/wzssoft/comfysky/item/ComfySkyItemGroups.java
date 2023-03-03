@@ -9,6 +9,6 @@ import net.minecraft.util.Identifier;
 
 public class ComfySkyItemGroups {
 
-    public static final ItemGroup ExtraCraft = FabricItemGroupBuilder.build(
+    public static final ItemGroup Comfysky = FabricItemGroupBuilder.build(
             new Identifier(ComfySkyMod.MODID, "tab"), () -> new ItemStack(TreasureHuntLibBlockItems.FLOWER_SEEDS_BLOCK_ITEM));
 }

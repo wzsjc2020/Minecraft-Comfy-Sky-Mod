@@ -1,0 +1,7 @@
+{
+  "parent": "comfysky:block/drift_object/template_drift_object_down",
+  "textures": {
+    "particle": "comfysky:block/drift_bamboo",
+    "log": "comfysky:block/drift_bamboo"
+  }
+}

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "comfysky:packed_barrel"
+    "comfysky:packed_barrel",
+    "comfysky:driftwood",
+    "comfysky:drift_bamboo"
   ]
 }

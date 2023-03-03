@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "comfysky:block/shoveled_red_sand"
+      },
+      {
+        "model": "comfysky:block/shoveled_red_sand",
+        "y": 90
+      },
+      {
+        "model": "comfysky:block/shoveled_red_sand",
+        "y": 180
+      },
+      {
+        "model": "comfysky:block/shoveled_red_sand",
+        "y": 270
+      }
+    ]
+  }
+}
+

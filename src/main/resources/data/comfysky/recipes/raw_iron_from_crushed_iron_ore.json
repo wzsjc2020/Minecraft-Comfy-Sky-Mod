@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "comfysky:crushed_iron_ore"
+        }
+    },
+    "result": {
+        "item": "minecraft:raw_iron",
+        "count": 1
+    }
+}

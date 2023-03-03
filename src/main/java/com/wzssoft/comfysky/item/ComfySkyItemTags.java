@@ -8,6 +8,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ComfySkyItemTags {
 
+    public static final TagKey<Item> BARREL_PACKING_BLACKLIST = ComfySkyItemTags.of("barrel_packing_blacklist");
 
     private static TagKey<Item> of(String name) {
         return TagKey.of(Registry.ITEM_KEY, new Identifier(ComfySkyMod.MODID, name));

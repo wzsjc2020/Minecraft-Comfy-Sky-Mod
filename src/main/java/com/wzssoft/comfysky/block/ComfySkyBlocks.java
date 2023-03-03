@@ -1,6 +1,8 @@
 package com.wzssoft.comfysky.block;
 
 import com.wzssoft.comfysky.ComfySkyMod;
+import com.wzssoft.comfysky.block.common.DriftwoodBlock;
+import com.wzssoft.comfysky.block.common.ShoveledSandBlock;
 import com.wzssoft.comfysky.block.hasNBT.DewFlowerBlock;
 import com.wzssoft.comfysky.block.common.ShoveledGrassBlock;
 import com.wzssoft.comfysky.block.hasNBT.PackedBarrelBlock;
@@ -19,6 +21,14 @@ public class ComfySkyBlocks {
 
     public static final Block PACKED_BARREL_BLOCK = registerBlock("packed_barrel",
             new PackedBarrelBlock(FabricBlockSettings.of(Material.WOOD).strength(2.5f).sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block DRIFTWOOD_BLOCK = registerBlock("driftwood",
+            new DriftwoodBlock(FabricBlockSettings.of(Material.WOOD, MapColor.SPRUCE_BROWN).strength(2.0f).sounds(BlockSoundGroup.WOOD).nonOpaque()));
+
+    public static final Block SHOVELED_RED_SAND_BLOCK = registerBlock("shoveled_red_sand", new ShoveledSandBlock(11098145));
+
+    public static final Block DRIFT_BAMBOO_BLOCK = registerBlock("drift_bamboo",
+            new DriftwoodBlock(FabricBlockSettings.of(Material.WOOD, MapColor.SPRUCE_BROWN).strength(2.0f).sounds(BlockSoundGroup.WOOD).nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block) {

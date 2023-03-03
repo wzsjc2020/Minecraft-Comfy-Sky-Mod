@@ -60,7 +60,7 @@ public class BarrelBlockMixin extends Block {
         for (ItemStack itemStack : inv) {
             if (itemStack.isEmpty()) continue;
             ++j;
-            if (i > ComfySkyConstant.getMaxBarrelDisplayInv()) continue;
+            if (i > ComfySkyConstant.MAX_BARREL_DISPLAY_INV) continue;
             ++i;
             MutableText mutableText = itemStack.getName().copy();
             mutableText.append(" x").append(String.valueOf(itemStack.getCount()));

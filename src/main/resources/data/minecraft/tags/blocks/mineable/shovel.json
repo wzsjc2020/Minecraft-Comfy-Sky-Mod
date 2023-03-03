@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "comfysky:shoveled_grass_block"
+    "comfysky:shoveled_grass_block",
+    "comfysky:shoveled_red_sand"
   ]
 }

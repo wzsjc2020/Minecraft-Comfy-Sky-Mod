@@ -1,14 +1,14 @@
 package com.wzssoft.comfysky.block.common;
 
 import com.wzssoft.treasurehuntlib.block.common.AbstractShoveledBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
+import net.minecraft.block.*;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.tag.FluidTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
+import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
 
@@ -36,23 +36,28 @@ public class ShoveledGrassBlock extends AbstractShoveledBlock {
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         int i = state.get(MOISTURE);
-        if (this.isWaterNearBy(world, pos) || world.hasRain(pos.up())) {
+        if (ShoveledGrassBlock.isWaterNearBy(world, pos) || world.hasRain(pos.up())) {
             if (i < MAX_MOISTURE) {
                 world.setBlockState(pos, state.with(MOISTURE, MAX_MOISTURE), Block.NOTIFY_LISTENERS);
             }
         } else if (i > 0) {
             world.setBlockState(pos, state.with(MOISTURE, i - 1), Block.NOTIFY_LISTENERS);
-        } else {
+        } else if (!ShoveledGrassBlock.hasPlants(world,pos)) {
             this.setToOriginalBlock(world, pos);
         }
     }
 
-    private boolean isWaterNearBy(World world, BlockPos pos) {
+    public static boolean isWaterNearBy(World world, BlockPos pos) {
         for (BlockPos blockPos : BlockPos.iterate(pos.add(-2, 0, -2), pos.add(2, 1, 2))) {
             if (!world.getFluidState(blockPos).isIn(FluidTags.WATER)) continue;
             return true;
         }
         return false;
+    }
+
+    public static boolean hasPlants(BlockView world, BlockPos pos){
+        Block block = world.getBlockState(pos.up()).getBlock();
+        return block instanceof PlantBlock;
     }
 
     @Override

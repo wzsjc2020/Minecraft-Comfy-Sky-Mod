@@ -9,8 +9,10 @@ import com.wzssoft.comfysky.item.ComfySkyItems;
 import com.wzssoft.comfysky.utils.ComfySkyConstant;
 import com.wzssoft.comfysky.utils.ComfySkyContentsLootFunction;
 import com.wzssoft.comfysky.utils.ComfySkyLootTableModifier;
+import com.wzssoft.treasurehuntlib.TreasureHuntLibClient;
 import com.wzssoft.treasurehuntlib.TreasureHuntLibRegister;
 import com.wzssoft.treasurehuntlib.block.TreasureHuntLibBlocks;
+import com.wzssoft.treasurehuntlib.block.hiden.FlowerSeedlingBlock;
 import com.wzssoft.treasurehuntlib.utils.TreasureHuntLibConstant;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.block.Blocks;
@@ -34,8 +36,11 @@ public class ComfySkyMod implements ModInitializer {
         ComfySkyContentsLootFunction.registerModContentsLootFunction();
         ComfySkyConstant.initConstant();
 
+        //register treasure enchantment effect block
         TreasureHuntLibRegister.registerTreasureEnchantmentEffectBlock(Blocks.GRASS_BLOCK, ComfySkyBlocks.SHOVELED_GRASS_BLOCK);
+        TreasureHuntLibRegister.registerTreasureEnchantmentEffectBlock(Blocks.RED_SAND, ComfySkyBlocks.SHOVELED_RED_SAND_BLOCK);
+
+        //register farmland
         TreasureHuntLibRegister.registerFarmlandProperty(ComfySkyBlocks.SHOVELED_GRASS_BLOCK, ShoveledGrassBlock.MOISTURE);
-        TreasureHuntLibConstant.FLOWERS.add(ComfySkyBlocks.DEW_FLOWER_BLOCK);
     }
 }

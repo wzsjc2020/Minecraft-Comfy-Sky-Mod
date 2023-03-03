@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,down=false": {
+      "model": "comfysky:block/drift_object/driftwood",
+      "y": 270
+    },
+    "facing=east,down=true": {
+      "model": "comfysky:block/drift_object/driftwood_down",
+      "y": 270
+    },
+    "facing=north,down=false": {
+      "model": "comfysky:block/drift_object/driftwood",
+      "y": 180
+    },
+    "facing=north,down=true": {
+      "model": "comfysky:block/drift_object/driftwood_down",
+      "y": 180
+    },
+    "facing=south,down=false": {
+      "model": "comfysky:block/drift_object/driftwood"
+    },
+    "facing=south,down=true": {
+      "model": "comfysky:block/drift_object/driftwood_down"
+    },
+    "facing=west,down=false": {
+      "model": "comfysky:block/drift_object/driftwood",
+      "y": 90
+    },
+    "facing=west,down=true": {
+      "model": "comfysky:block/drift_object/driftwood_down",
+      "y": 90
+    }
+  }
+}

@@ -29,15 +29,14 @@ import net.minecraft.util.Identifier;
 public class ComfySkyLootTableModifier {
 
     public static final Identifier GRASS_BLOCK_ID = new Identifier("minecraft", "blocks/grass_block");
+    public static final Identifier RED_SAND_ID = new Identifier("minecraft", "blocks/red_sand");
 
     public static void registerModModifyLootTable() {
 
         LootTableEvents.REPLACE.register((resourceManager, lootManager, id, original, source) -> {
+
             if (GRASS_BLOCK_ID.equals(id)) {
-
-
                 LootTable.Builder table = LootTable.builder();
-
                 LootCondition.Builder match_enchantment_silktouch = MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, NumberRange.IntRange.exactly(1))));
                 LootCondition.Builder match_enchantment_treasure = MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(TreasureHuntLibEnchantments.TREASURE, NumberRange.IntRange.exactly(1))));
                 LootCondition.Builder explosion = SurvivesExplosionLootCondition.builder();
@@ -77,9 +76,27 @@ public class ComfySkyLootTableModifier {
                                 ItemEntry.builder(Items.AIR).apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f))).conditionally(explosion)));
 
                 table.pool(stone_builder);
-
                 return table.build();
             }
+
+            if(RED_SAND_ID.equals(id)){
+                LootTable.Builder table = LootTable.builder();
+                LootCondition.Builder match_enchantment_treasure = MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(TreasureHuntLibEnchantments.TREASURE, NumberRange.IntRange.exactly(1))));
+                LootCondition.Builder explosion = SurvivesExplosionLootCondition.builder();
+
+                LootPool.Builder gold_ore_builder = LootPool.builder().rolls(ConstantLootNumberProvider.create(1.0f))
+                        .with(AlternativeEntry.builder(
+                                GroupEntry.create(
+                                        ItemEntry.builder(ComfySkyItems.CRUSHED_GOLD_ORE).weight(1).apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f))),
+                                        ItemEntry.builder(Items.AIR).weight(20)
+                                ).conditionally(match_enchantment_treasure),
+                                ItemEntry.builder(Items.RED_SAND).apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f))).conditionally(explosion)));
+
+                table.pool(gold_ore_builder);
+                return table.build();
+            }
+
+
             return original;
         });
     }

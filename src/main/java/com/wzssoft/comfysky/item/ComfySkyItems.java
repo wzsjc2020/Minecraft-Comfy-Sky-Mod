@@ -11,11 +11,12 @@ import net.minecraft.util.registry.Registry;
 
 public class ComfySkyItems {
 
-    public static final Item CRUSHED_COAL = registerItem("crushed_coal", new Item(new FabricItemSettings().group(ComfySkyItemGroups.ExtraCraft).rarity(Rarity.COMMON)));
-    public static final Item CRUSHED_IRON_ORE = registerItem("crushed_iron_ore", new Item(new FabricItemSettings().group(ComfySkyItemGroups.ExtraCraft).rarity(Rarity.COMMON)));
-    public static final Item CRUSHED_STONE = registerItem("crushed_stone", new Item(new FabricItemSettings().group(ComfySkyItemGroups.ExtraCraft).rarity(Rarity.COMMON)));
-    public static final Item DEW_BOTTLE = registerItem("dew_bottle", new DewBottleItem(new FabricItemSettings().group(ComfySkyItemGroups.ExtraCraft).rarity(Rarity.COMMON).maxDamage(50)));
-    public static final Item PACKING_TAPE = registerItem("packing_tape", new PackingTapeItem(new FabricItemSettings().group(ComfySkyItemGroups.ExtraCraft).rarity(Rarity.COMMON).maxDamage(5)));
+    public static final Item CRUSHED_COAL = registerItem("crushed_coal", new Item(new FabricItemSettings().group(ComfySkyItemGroups.Comfysky).rarity(Rarity.COMMON)));
+    public static final Item CRUSHED_IRON_ORE = registerItem("crushed_iron_ore", new Item(new FabricItemSettings().group(ComfySkyItemGroups.Comfysky).rarity(Rarity.COMMON)));
+    public static final Item CRUSHED_STONE = registerItem("crushed_stone", new Item(new FabricItemSettings().group(ComfySkyItemGroups.Comfysky).rarity(Rarity.COMMON)));
+    public static final Item DEW_BOTTLE = registerItem("dew_bottle", new DewBottleItem(new FabricItemSettings().group(ComfySkyItemGroups.Comfysky).rarity(Rarity.COMMON).maxDamage(50)));
+    public static final Item PACKING_TAPE = registerItem("packing_tape", new PackingTapeItem(new FabricItemSettings().group(ComfySkyItemGroups.Comfysky).rarity(Rarity.COMMON).maxDamage(5)));
+    public static final Item CRUSHED_GOLD_ORE = registerItem("crushed_gold_ore", new Item(new FabricItemSettings().group(ComfySkyItemGroups.Comfysky).rarity(Rarity.COMMON)));
 
 
     private static Item registerItem(String name, Item item) {

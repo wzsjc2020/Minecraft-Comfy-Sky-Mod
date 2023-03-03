@@ -1,6 +1,9 @@
 {
   "block.comfysky.shoveled_grass_block": "挖掘过的草方块",
   "block.comfysky.packed_barrel": "打包过的木桶",
+  "block.comfysky.driftwood": "浮木",
+  "block.comfysky.shoveled_red_sand": "挖掘过的红沙",
+  "block.comfysky.drift_bamboo": "浮竹",
 
   "itemGroup.comfysky.tab": "舒适空岛",
 
@@ -10,6 +13,8 @@
   "item.comfysky.dew_flower": "露水花",
   "item.comfysky.dew_bottle": "露水瓶",
   "item.comfysky.packing_tape": "打包带",
+  "item.comfysky.crushed_gold_ore": "碎金矿",
 
-  "container.minecraft.barrel.more": "还有 %s 个未显示物品..."
+  "container.minecraft.barrel.more": "还有 %s 个未显示物品...",
+  "pack.fail": "禁止套娃"
 }

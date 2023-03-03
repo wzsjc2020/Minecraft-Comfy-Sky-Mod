@@ -4,15 +4,18 @@ import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldAccess;
 import org.jetbrains.annotations.Nullable;
 
 /**
  * added since 17.0.3
- * modified at 17.0.4
+ * modified at 17.0.4, 17.0.7
  *
  * @specialNote can grow on shoveled block
  * @reference extra rs craft mod bluestone block
@@ -27,7 +30,6 @@ public class DewFlowerBlock extends FlowerBlock implements BlockEntityProvider {
 
     /**
      * added since 17.0.4
-     *
      * @specialNote when you plant a dew_flower, nbt will syn lastInteractTime
      */
     @Override

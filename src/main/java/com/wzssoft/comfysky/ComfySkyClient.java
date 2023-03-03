@@ -19,6 +19,11 @@ public class ComfySkyClient implements ClientModInitializer {
         //dew flower
         BlockRenderLayerMap.INSTANCE.putBlock(ComfySkyBlocks.DEW_FLOWER_BLOCK, RenderLayer.getCutout());
 
+        //drift_object
+        BlockRenderLayerMap.INSTANCE.putBlock(ComfySkyBlocks.DRIFTWOOD_BLOCK, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ComfySkyBlocks.DRIFT_BAMBOO_BLOCK, RenderLayer.getCutout());
 
+        //shoveled sand block
+        BlockRenderLayerMap.INSTANCE.putBlock(ComfySkyBlocks.SHOVELED_RED_SAND_BLOCK, RenderLayer.getCutout());
     }
 }
