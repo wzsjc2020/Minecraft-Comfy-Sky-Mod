@@ -45,3 +45,17 @@
 @date:2023.2.4
 @link:https://morusleaf.github.io/forager-handbook/item.html
 @description: 使用了浮岛物语物品中金矿的美术资源
+
+@mod_item: survivor digging shovel
+@author:IronDuke
+@date:2023.3.6
+@link:https://www.planetminecraft.com/texture-pack/ironduke-s-better-armory-java/
+@description:使用了ironduke-s-improved-armory-fixed 中wooden_shovel 的材质，并进行了修改
+
+@mod_item: engineer digging shovel
+@author:Manuel XXVI
+@date:2023.3.6
+@link:https://www.planetminecraft.com/texture-pack/xxvi-s-tweaked-netherite-tools/
+@description:使用了玉髓铲 的材质，并进行了修改
+
+

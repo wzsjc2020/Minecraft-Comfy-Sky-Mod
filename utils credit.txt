@@ -34,4 +34,12 @@
 @link:https://misode.github.io/advancement/
 @description:自动生成进度
 
+@tool:Chat GPT
+@auhtor:unkonwn
+@time:2023
+@link:https://chat.openai.com/chat
+@description: 辅助生成Java代码
+
+
+
 
