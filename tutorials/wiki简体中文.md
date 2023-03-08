@@ -588,7 +588,7 @@
 
 | 可挖掘方块 | id                    | 挖掘等级      | 添加版本 | 掉落物                                                       | 绑定方块                               |
 | ---------- | --------------------- | ------------- | -------- | ------------------------------------------------------------ | -------------------------------------- |
-| 红沙       | minecraft:red_sand    | Material.WOOD | v17.0.6  | ![](img/crushed_gold_ore-32px.png)![](img/crushed_SAND-32px.png) | ![](img/shoveled_red_sand-32px.png)    |
+| 红沙       | minecraft:red_sand    | Material.WOOD | v17.0.6  | ![](img/crushed_gold_ore-32px.png)![](img/crushed_sand-32px.png) | ![](img/shoveled_red_sand-32px.png)    |
 | 草方块     | minecraft:grass_block | Material.WOOD | v17.0.1  | ![](img/crushed_iron_ore-32px.png)![](img/crushed_stone-32px.png)![](img/crushed_coal-32px.png) | ![](img/shoveled_grass_block-32px.png) |
 |            |                       |               |          |                                                              |                                        |
 
