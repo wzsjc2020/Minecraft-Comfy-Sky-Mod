@@ -42,7 +42,7 @@
 
 特性：1.不能在上面种植植物
 
-​			2.使用任意等级的**挖掘铲**挖掘红沙有1/20的概率获得碎金矿
+​			2.使用任意等级的**挖掘铲**挖掘红沙分别有1/20的概率获得碎金矿和碎沙
 
 获取此物品的方法：使用任意等级的**挖掘铲**挖掘红沙
 
@@ -170,13 +170,13 @@
 
 获取此物品的方法：使用任意等级的**挖掘铲**左键红沙，有1/20的概率获得
 
-简单解释如何使用此物品：9个碎沙可以合成一个沙子
+简单解释如何使用此物品：待定（为1.20和沙子有关的一个方块预留空位）
 
 
 
-### 花朵
+### 种子
 
-![](img/flower_seeds-32px.png)![](img/dew_flower-32px.png)![](img/cinderbloom-32px.png)
+![](img/flower_seeds-32px.png)
 
 #### 花种子*
 
@@ -199,6 +199,10 @@
 简单解释如何使用此物品：右键放置在挖掘过的方块上
 
 
+
+### 功能花
+
+![](img/dew_flower-32px.png)![](img/cinderbloom-32px.png)
 
 #### 露水花*
 
@@ -249,6 +253,26 @@
 获取此物品的方法：在被挖掘的方块上种植花种子，有概率种出火焰花
 
 简单解释如何使用此物品：右键放置在标签为minecraft:dirt或标签为treasurehuntlib:farmland的方块上
+
+
+
+#### 康威生命花*
+
+![](img/shoveled_grass_block-32px.png)
+
+添加此物品的原因：Minecraft中花朵不可繁殖，原版农业缺乏趣味性
+
+稀有度：普通
+
+添加版本：v17.0.13
+
+基础数据：待定
+
+特性：待定
+
+获取此物品的方法：待定
+
+简单解释如何使用此物品：待定
 
 
 
@@ -591,6 +615,14 @@
 | 红沙       | minecraft:red_sand    | Material.WOOD | v17.0.6  | ![](img/crushed_gold_ore-32px.png)![](img/crushed_sand-32px.png) | ![](img/shoveled_red_sand-32px.png)    |
 | 草方块     | minecraft:grass_block | Material.WOOD | v17.0.1  | ![](img/crushed_iron_ore-32px.png)![](img/crushed_stone-32px.png)![](img/crushed_coal-32px.png) | ![](img/shoveled_grass_block-32px.png) |
 |            |                       |               |          |                                                              |                                        |
+
+
+
+### 功能花的种植*
+
+添加版本：v17.0.13
+
+待定
 
 
 
