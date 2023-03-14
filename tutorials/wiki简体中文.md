@@ -1,4 +1,4 @@
-# 舒适空岛 Wiki V17.0.12*
+# 舒适空岛 Wiki V17.0.13*
 
 
 
@@ -6,7 +6,7 @@
 
 ### 挖掘过的方块*
 
-![](img/shoveled_grass_block-32px.png)![](img/shoveled_red_sand-32px.png)
+![](img/shoveled_grass_block-32px.png)![](img/shoveled_red_sand-32px.png)![](img/shoveled_sand-32px.png)
 
 #### 挖掘过的草方块
 
@@ -45,6 +45,28 @@
 ​			2.使用任意等级的**挖掘铲**挖掘红沙分别有1/20的概率获得碎金矿和碎沙
 
 获取此物品的方法：使用任意等级的**挖掘铲**挖掘红沙
+
+简单解释如何使用此物品：生存模式无法获取
+
+
+
+#### 挖掘过的沙子*
+
+![](img/shoveled_sand-32px.png)
+
+添加此物品的原因：拓展铜锭的获取方法，鼓励玩家前往暖水海洋
+
+稀有度：普通
+
+添加版本：v17.0.13
+
+基础数据：@LOOT：shoveled_blocks/shoveled_sand #shovel
+
+特性：1.不能在上面种植植物
+
+​			2.使用任意等级的**挖掘铲**挖掘红沙分别有1/20的概率获得碎铜矿和碎沙
+
+获取此物品的方法：使用任意等级的**挖掘铲**挖掘沙子
 
 简单解释如何使用此物品：生存模式无法获取
 
@@ -170,7 +192,7 @@
 
 获取此物品的方法：使用任意等级的**挖掘铲**左键红沙，有1/20的概率获得
 
-简单解释如何使用此物品：待定（为1.20和沙子有关的一个方块预留空位）
+简单解释如何使用此物品：目前版本（Minecraft 1.19.2）只能用9个碎沙合成沙子（为1.20和沙子有关的一个方块预留空位）
 
 
 
@@ -202,7 +224,7 @@
 
 ### 功能花
 
-![](img/dew_flower-32px.png)![](img/cinderbloom-32px.png)
+![](img/dew_flower-32px.png)![](img/cinderbloom-32px.png)![](img/zoetic_flower-32px.png)
 
 #### 露水花*
 
@@ -256,9 +278,9 @@
 
 
 
-#### 康威生命花*
+#### 生命花*
 
-![](img/shoveled_grass_block-32px.png)
+![](img/zoetic_flower-32px.png)
 
 添加此物品的原因：Minecraft中花朵不可繁殖，原版农业缺乏趣味性
 
@@ -266,19 +288,23 @@
 
 添加版本：v17.0.13
 
-基础数据：待定
+基础数据：@light level:12  #broke instantly
 
-特性：待定
+特性：1.可以发出12格光照强度
 
-获取此物品的方法：待定
+​		   2.不可以制作谜之炖菜，不能放置在花盆，完全没有任何花的属性
 
-简单解释如何使用此物品：待定
+​		   3.当种植在鲜活草地上时，可以模拟出康威生命游戏，详见特性-康威生命游戏
+
+获取此物品的方法：使用骨粉右键鲜草方块或生命花无限繁殖
+
+简单解释如何使用此物品：右键放置在标签为minecraft:dirt或标签为treasurehuntlib:farmland的方块上；放置在鲜活草地上会触发特殊效果
 
 
 
 ### 实用工具*
 
-![](img/dew_bottle-32px.png)![](img/packing_tape-32px.png)![](img/driftwood-32px.png)![](img/packed_barrel-32px.png)![](img/drift_bamboo-32px.png)![](img/electrostatic_discharge_rod-32px.png)![](img/debug_copper_stick-32px.png)![](img/wall_calender_sign-32px.png)
+![](img/dew_bottle-32px.png)![](img/packing_tape-32px.png)![](img/driftwood-32px.png)![](img/packed_barrel-32px.png)![](img/drift_bamboo-32px.png)![](img/electrostatic_discharge_rod-32px.png)![](img/wall_calender_sign-32px.png)![](img/fish_trap-32px.png)
 
 #### 露水瓶
 
@@ -428,26 +454,6 @@
 
 
 
-#### 铜调试棒*
-
-![](img/debug_copper_stick-32px.png)
-
-添加此物品的原因：创造模式调试工具
-
-稀有度：史诗
-
-添加版本：v17.0.10
-
-基础数据：@TIME_OF_A_DAY:1440
-
-特性：1.右键静电释放器计算以当前产生静电的速率至存储满所花费的时间
-
-获取此物品的方法：指令 /give @p comfysky:debug_copper_stick 1
-
-简单解释如何使用此物品：生存模式无法获取
-
-
-
 #### 挂历*
 
 ![](img/wall_calender_sign-32px.png)
@@ -469,6 +475,32 @@
 获取此物品的方法：工作台合成
 
 简单解释如何使用此物品：右键放置在方块的侧面，会自动刷新当前的生存天数。由于这个方块和告示牌一样通过实体渲染，放置过多可能会导致严重卡顿
+
+
+
+#### 捕鱼陷阱*
+
+![](img/fish_trap-32px.png)
+
+添加此物品的原因：Minecraft中没有自动钓鱼，玩家物品掉入虚空后将会被删除
+
+稀有度：普通
+
+添加版本：v17.0.13
+
+基础数据：#LOOTS: fishing #nbt lastInteractTime #nbt Inventory #axe @luck :0 
+
+特性：1.可以放置在水源方块上
+
+​			2.当放置在水源方块上时，每隔640tick(32秒)会自动捕获#LOOTS: fishing, 幸运值为0
+
+​			3.当放置在世界Y轴最低值（即玩家最低可破坏高度）时，每隔每隔640tick(32秒)会尝试捕获玩家意外掉落于虚空且稀有度等级高于普通的物品（当前版本v17.0.13并没有实装此功能）
+
+​			4.当捕获物品时，物品会显示在捕鱼陷阱上方
+
+获取此物品的方法：工作台合成
+
+简单解释如何使用此物品：右键放置在水源方块上（包括含水方块）；当捕获物品时，右键捕鱼陷阱可获取捕获的物品（优先进入背包）
 
 
 
@@ -588,6 +620,76 @@
 
 
 
+### 创造模式物品
+
+![](img/debug_copper_stick-32px.png)![](img/golden_disc_1-32px.png)
+
+#### 铜调试棒*
+
+![](img/debug_copper_stick-32px.png)
+
+添加此物品的原因：创造模式调试工具
+
+稀有度：史诗
+
+添加版本：v17.0.10
+
+基础数据：
+
+特性：1.右键静电释放器计算以当前产生静电的速率至存储满所花费的时间
+
+​			2.右键捕鱼陷阱以查看玩家遗失物品列表
+
+获取此物品的方法：创造物品栏
+
+简单解释如何使用此物品：生存模式无法获取，如果右键方块无效可以尝试shift+右键
+
+
+
+#### 金唱片*
+
+![](img/golden_disc_1-32px.png)
+
+添加此物品的原因：创造模式测试物品
+
+稀有度：史诗
+
+添加版本：v17.0.13
+
+基础数据：
+
+特性：
+
+获取此物品的方法：虚空钓鱼（当前版本v17.0.13没有实装此功能）或 创造物品栏
+
+简单解释如何使用此物品：在唱片机中使用
+
+
+
+### 鲜活草地*
+
+![](img/zoetic_grass_block-32px.png)
+
+添加此物品的原因：Minecraft原版农业过于无聊，拓展Minecraft的可玩性
+
+稀有度：普通
+
+添加版本：v17.0.13
+
+基础数据：
+
+特性：1.每隔10tick(1秒)尝试进行一次康威生命游戏判断
+
+​			2.当time of day 大于12000 时， 康威生命游戏判断停止，直达次日黎明
+
+​			3.晚上这段时间是摆放生命花的好时机，因为当time of day 大于12000 时，康威生命游戏将暂停
+
+获取此物品的方法：工作台合成
+
+简单解释如何使用此物品：右键放置
+
+
+
 ### 演示物品
 
 ![](img/shoveled_grass_block-32px.png)
@@ -606,23 +708,30 @@
 
 简单解释如何使用此物品：
 
+
+
 ## 特性
 
 ### 挖掘铲可挖掘的方块*
 
 | 可挖掘方块 | id                    | 挖掘等级      | 添加版本 | 掉落物                                                       | 绑定方块                               |
 | ---------- | --------------------- | ------------- | -------- | ------------------------------------------------------------ | -------------------------------------- |
+| 沙子       | minecraft:sand        | Material.WOOD | v17.0.13 | ![](img/crushed_copper_ore-32px.png)![](img/crushed_sand-32px.png) | ![](img/shoveled_sand-32px.png)        |
 | 红沙       | minecraft:red_sand    | Material.WOOD | v17.0.6  | ![](img/crushed_gold_ore-32px.png)![](img/crushed_sand-32px.png) | ![](img/shoveled_red_sand-32px.png)    |
 | 草方块     | minecraft:grass_block | Material.WOOD | v17.0.1  | ![](img/crushed_iron_ore-32px.png)![](img/crushed_stone-32px.png)![](img/crushed_coal-32px.png) | ![](img/shoveled_grass_block-32px.png) |
 |            |                       |               |          |                                                              |                                        |
 
 
 
-### 功能花的种植*
+### 康威生命游戏*
 
 添加版本：v17.0.13
 
-待定
+![](screenshot/life_game.png)
+
+可以把生命花种植在鲜活草地上来模拟康威生命游戏
+
+[康威生命游戏 - 维基百科，自由的百科全书 (wikipedia.org)](https://zh.wikipedia.org/wiki/康威生命游戏)
 
 
 
