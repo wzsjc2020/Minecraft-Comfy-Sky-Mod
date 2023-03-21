@@ -13,7 +13,7 @@
 
 ### 模组前置
 
-| 需要安装前置库 Treasure Hunt Lib 1.19.2-17.1.7（v17.0.12及之后版本） | [CourseForge](https://link.mcmod.cn/target/aHR0cHM6Ly93d3cuY3Vyc2Vmb3JnZS5jb20vbWluZWNyYWZ0L21jLW1vZHMvdHJlYXN1cmUtaHVudC1saWI=) |
+| 需要安装前置库 Treasure Hunt Lib 1.19.2-17.2.1（v17.0.15及之后版本） | [CourseForge](https://link.mcmod.cn/target/aHR0cHM6Ly93d3cuY3Vyc2Vmb3JnZS5jb20vbWluZWNyYWZ0L21jLW1vZHMvdHJlYXN1cmUtaHVudC1saWI=) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 需安装 Fabric API                                            | [CourseForge](https://link.mcmod.cn/target/aHR0cHM6Ly93d3cuY3Vyc2Vmb3JnZS5jb20vbWluZWNyYWZ0L21jLW1vZHMvZmFicmljLWFwaQ==) |
 | 需要安装李芒果空岛 Carpet Sky Additions 1.19.2-4.1.3         | [CourseForge](https://link.mcmod.cn/target/aHR0cHM6Ly93d3cuY3Vyc2Vmb3JnZS5jb20vbWluZWNyYWZ0L21jLW1vZHMvY2FycGV0LXNreS1hZGRpdGlvbnM=) |
@@ -35,7 +35,7 @@
 
 |        | Forge    | Fabric                        | 其他     |
 | ------ | -------- | ----------------------------- | -------- |
-| 1.19.2 | 暂不支持 |  1.19.2-17.0.14 | 暂不支持 |
+| 1.19.2 | 暂不支持 |  1.19.2-17.0.15 | 暂不支持 |
 | 1.20   | 暂不支持 | 暂不支持                      | 暂不支持 |
 
 
