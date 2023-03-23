@@ -58,4 +58,13 @@
 @link:https://www.planetminecraft.com/texture-pack/xxvi-s-tweaked-netherite-tools/
 @description:使用了玉髓铲 的材质，并进行了修改
 
+@mod_item: fish_trap
+@author:Siphalor,Felix14-v2
+@date:2023.3.12
+@link:https://github.com/Siphalor/wandering-collector
+@description: 参考了 wandering-collector-1.19.3中的源码，并重新整理和架构
+
+
+
+
 

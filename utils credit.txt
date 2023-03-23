@@ -41,5 +41,9 @@
 @description: 辅助生成Java代码
 
 
-
+@tool:RGBToInt
+@auhtor:wzssoft wzsjc2023
+@time:2023
+@link:不开源
+@description: 简单程序用于计算RGB Integer，使用ChatGPT生成
 
